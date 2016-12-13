@@ -3,5 +3,8 @@ using System.Collections;
 
 public class NetworkManager : MonoBehaviour
 {
-    bool dontdestroyonload = true;
+	void Awake() 
+	{
+        DontDestroyOnLoad(transform.gameObject);
+    }
 }
