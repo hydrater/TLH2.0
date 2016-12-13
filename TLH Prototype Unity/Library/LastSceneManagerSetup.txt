@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/UFPS/Base/Content/Levels/SkyCity/UFPS_SkyCity.unity
+- path: Assets/_Scene/_Title.unity
   isLoaded: 1
   isActive: 1
