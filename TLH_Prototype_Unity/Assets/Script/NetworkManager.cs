@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class NetworkManager : Photon.MonoBehaviour
 {
 	const string VERSION = "Prototype";
-	bool isReady;
+	bool isReady = false;
 
 	//Connect to server upon game start
 	void Awake() 
@@ -30,7 +30,7 @@ public class NetworkManager : Photon.MonoBehaviour
 			case "Lobby":
 				photonView.RPC("updatePlayerDisplay", PhotonTargets.All);
 				GameObject.Find("ReadyBtn").GetComponent<Button>().onClick.AddListener(readyButton);
-				Debug.Log(GameObject.Find("ReadyButton"));
+				GameObject.Find("LeaveBtn").GetComponent<Button>().onClick.AddListener(leaveButton);
 			break;
 
 			case "PrototypeLevel":
@@ -66,19 +66,32 @@ public class NetworkManager : Photon.MonoBehaviour
 	void OnPhotonPlayerDisconnected(PhotonPlayer other)
 	{
 		updatePlayerDisplay();
-	}
-
-	public void readyButton()
-	{
-		isReady = !isReady;
 		photonView.RPC("lobbyReady", PhotonTargets.All, isReady, PhotonNetwork.playerName);
 	}
+
+
     //For debugging purposes and convenient keyboard controls
+    bool tabfocus = false;
 	void Update()
 	{
+		if(Input.GetKeyUp(KeyCode.Tab))
+		{
+			if (tabfocus) 
+			{
+				GameObject.Find ("Room").GetComponent<InputField> ().Select ();
+				tabfocus = !tabfocus;
+			}
+			else
+			{
+				GameObject.Find("Username").GetComponent<InputField>().Select();
+				tabfocus = !tabfocus;
+			}
+		}
+		if (Input.GetKeyUp(KeyCode.Return))
+		{
+			enterRoom();
+		}
 		//Debug.Log();
-
-
 	}
 
 	[PunRPC]
@@ -98,9 +111,23 @@ public class NetworkManager : Photon.MonoBehaviour
 				break;
 			}
 		}
-
 	}
 
+	public void readyButton()
+	{
+		isReady = !isReady;
+		photonView.RPC("lobbyReady", PhotonTargets.All, isReady, PhotonNetwork.playerName);
+	}
+
+	public void leaveButton()
+	{
+		PhotonNetwork.LeaveRoom();
+		SceneManager.LoadScene("_Title");
+	}
+
+	private IEnumerator gameStart;
+
+	//Bugs cannot unready, cannot check all
 	[PunRPC]
 	void lobbyReady(bool ready, string username)
 	{
@@ -111,25 +138,29 @@ public class NetworkManager : Photon.MonoBehaviour
 			if(playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text == username)
 			{
 				playerList.transform.GetChild(i).GetComponent<Image>().color = ready ? Color.green : Color.red;
-				++readyAmt;
+				if (playerList.transform.GetChild(i).GetComponent<Image>().color == Color.green)
+					++readyAmt;
 			}
 		}
 		if (readyAmt == PhotonNetwork.playerList.Length)
 		{
-			StartCoroutine(gameStartTimer());
+			gameStart = gameStartTimer();
+			StartCoroutine(gameStart);
 		}
 		else
 		{
-			StopCoroutine(gameStartTimer());
+			StopCoroutine(gameStart);
+			GameObject.Find("TimerTxt").GetComponent<Text>().text = "";
 		}
 	}
 
 	IEnumerator gameStartTimer()
 	{
+		Text timer = GameObject.Find("TimerTxt").GetComponent<Text>();
 		for (sbyte i = 5; i >= 0; --i)
 		{
+			timer.text = string.Format("0:0{0}", i.ToString());
 			yield return new WaitForSeconds(1f);
-			//update timer UI
 		}
 		//display loading scene
 		SceneManager.LoadSceneAsync("PrototypeLevel");
