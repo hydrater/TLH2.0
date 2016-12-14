@@ -37,6 +37,8 @@ public class NetworkManager : Photon.MonoBehaviour
 			case "PrototypeLevel":
 				Cursor.lockState =  CursorLockMode.Confined;
 				Cursor.visible = false;
+				//PhotonNetwork.Instantiate("Player", GameObject.Find("spawnPoint").position, spawnPoint.rotation, 0);
+				//gameObject.SetActive(false);
 			break;
 		}
 
@@ -98,9 +100,7 @@ public class NetworkManager : Photon.MonoBehaviour
 			}
 		}
 		if (Input.GetKeyUp(KeyCode.Return))
-		{
 			enterRoom();
-		}
 	}
 
 	[PunRPC]
@@ -142,7 +142,7 @@ public class NetworkManager : Photon.MonoBehaviour
 			if(playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text == username)
 				playerList.transform.GetChild(i).GetComponent<Image>().color = ready ? Color.green : Color.red;
 			if (playerList.transform.GetChild(i).GetComponent<Image>().color == Color.green)
-					++readyAmt;
+				++readyAmt;
 		}
 		if (readyAmt == PhotonNetwork.playerList.Length)
 		{
