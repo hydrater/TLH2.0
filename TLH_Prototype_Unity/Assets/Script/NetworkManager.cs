@@ -140,11 +140,9 @@ public class NetworkManager : Photon.MonoBehaviour
 		for(int i = PhotonNetwork.playerList.Length - 1; i >= 0; --i)
 		{
 			if(playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text == username)
-			{
 				playerList.transform.GetChild(i).GetComponent<Image>().color = ready ? Color.green : Color.red;
-				if (playerList.transform.GetChild(i).GetComponent<Image>().color == Color.green)
+			if (playerList.transform.GetChild(i).GetComponent<Image>().color == Color.green)
 					++readyAmt;
-			}
 		}
 		if (readyAmt == PhotonNetwork.playerList.Length)
 		{
