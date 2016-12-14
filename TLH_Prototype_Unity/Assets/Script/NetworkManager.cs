@@ -107,19 +107,12 @@ public class NetworkManager : Photon.MonoBehaviour
 	void updatePlayerDisplay()
 	{
 		Transform playerList = GameObject.Find("Player List").transform;
-		for(byte i = 0; i < 6; ++i)
+		for(int i = PhotonNetwork.playerList.Length - 1; i >= 0; --i)
 		{
-			if (i<PhotonNetwork.playerList.Length)
-			{
-				playerList.transform.GetChild(i).gameObject.SetActive(true);
-				playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text = PhotonNetwork.playerList[i].name;
-			}
-			else
-			{
-				playerList.transform.GetChild(i).gameObject.SetActive(false);
-				break;
-			}
+			playerList.transform.GetChild(i).gameObject.SetActive(true);
+			playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text = PhotonNetwork.playerList[i].name;
 		}
+		playerList.transform.GetChild(PhotonNetwork.playerList.Length).gameObject.SetActive(false);
 	}
 
 	public void readyButton()
@@ -144,7 +137,7 @@ public class NetworkManager : Photon.MonoBehaviour
 	{
 		byte readyAmt = 0;
 		Transform playerList = GameObject.Find("Player List").transform;
-		for(byte i = 0; i < PhotonNetwork.playerList.Length; ++i)
+		for(int i = PhotonNetwork.playerList.Length - 1; i >= 0; --i)
 		{
 			if(playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text == username)
 			{
