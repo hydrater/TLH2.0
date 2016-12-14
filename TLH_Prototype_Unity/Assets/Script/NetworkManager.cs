@@ -3,20 +3,22 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class NetworkManager : MonoBehaviour
+public class NetworkManager : Photon.MonoBehaviour
 {
 	const string VERSION = "Prototype";
 
 	//Connect to server upon game start
 	void Awake() 
 	{
+		SceneManager.activeSceneChanged += onSceneChange;
         DontDestroyOnLoad(transform.gameObject);
 		if (!PhotonNetwork.connected)
 					PhotonNetwork.ConnectUsingSettings(VERSION);
+		
     }
 
 	//application fires a protocol to this function to link together
-    public void onSceneChange()
+	public void onSceneChange(Scene previousScene, Scene newScene)
     {
 		switch(SceneManager.GetActiveScene().name)
 		{
@@ -25,7 +27,8 @@ public class NetworkManager : MonoBehaviour
 			break;
 
 			case "Lobby":
-				//PhotonNetwork.playerList[0].name;
+			Debug.Log("test");
+			photonView.RPC("updatePlayerDisplay", PhotonTargets.All);
 			break;
 
 			case "PrototypeLevel":
@@ -55,6 +58,17 @@ public class NetworkManager : MonoBehaviour
     //For debugging purposes only
 	void Update()
 	{
-		//Debug.Log();
+		//Debug.Log(SceneManager.GetActiveScene().name);
+	}
+
+	[PunRPC]
+	void updatePlayerDisplay()
+	{
+		Transform playerList = GameObject.Find("Player List").transform;
+		for(byte i = 0; i<PhotonNetwork.playerList.Length; ++i)
+		{
+			playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text = PhotonNetwork.playerList[i].name;
+		}
+
 	}
 }
