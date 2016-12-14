@@ -17,7 +17,7 @@ public class NetworkManager : Photon.MonoBehaviour
 		
     }
 
-	//application fires a protocol to this function to link together
+	//Function is called every time the scene is changed
 	public void onSceneChange(Scene previousScene, Scene newScene)
     {
 		switch(SceneManager.GetActiveScene().name)
@@ -27,7 +27,6 @@ public class NetworkManager : Photon.MonoBehaviour
 			break;
 
 			case "Lobby":
-			Debug.Log("test");
 			photonView.RPC("updatePlayerDisplay", PhotonTargets.All);
 			break;
 
@@ -69,6 +68,11 @@ public class NetworkManager : Photon.MonoBehaviour
 		{
 			playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text = PhotonNetwork.playerList[i].name;
 		}
+	}
 
+	[PunRPC]
+	void lobbyReady()
+	{
+		
 	}
 }

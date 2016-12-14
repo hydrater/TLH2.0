@@ -33,4 +33,5 @@ MonoBehaviour:
   - RequestForPickupItems
   - RequestForPickupTimes
   - updatePlayerDisplay
+  - lobbyReady
   DisableAutoOpenWizard: 1
