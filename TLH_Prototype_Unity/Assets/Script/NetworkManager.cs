@@ -153,8 +153,11 @@ public class NetworkManager : Photon.MonoBehaviour
 		}
 		else
 		{
-			StopCoroutine(gameStart);
-			GameObject.Find("TimerTxt").GetComponent<Text>().text = "";
+			if (gameStart != null)
+			{
+				StopCoroutine(gameStart);
+				GameObject.Find("TimerTxt").GetComponent<Text>().text = "";
+			}
 		}
 	}
 
