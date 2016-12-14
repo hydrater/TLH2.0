@@ -49,9 +49,19 @@ public class NetworkManager : Photon.MonoBehaviour
     }
 
     //Change scene once connected to room
-	void OnJoinedRoom ()
+	void OnJoinedRoom()
 	{
 		SceneManager.LoadScene("Lobby");
+	}
+
+	void OnPhotonJoinRoomFailed()
+	{
+		//ROOM IS FULL ERROR
+	}
+
+	void OnPhotonPlayerDisconnected(PhotonPlayer other)
+	{
+		updatePlayerDisplay();
 	}
 
     //For debugging purposes only
