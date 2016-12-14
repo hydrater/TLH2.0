@@ -33,3 +33,5 @@ EditorBuildSettings:
     path: Assets/UFPS/Multiplayer/Content/Levels/Examples/UFPSMP_TestMap.unity
   - enabled: 1
     path: Assets/_Scene/_Title.unity
+  - enabled: 1
+    path: Assets/_Scene/Lobby.unity

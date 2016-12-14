@@ -13,8 +13,6 @@ public class NetworkManager : MonoBehaviour
         DontDestroyOnLoad(transform.gameObject);
 		if (!PhotonNetwork.connected)
 					PhotonNetwork.ConnectUsingSettings(VERSION);
-		Cursor.lockState =  CursorLockMode.Confined;
-		Cursor.visible = false;
     }
 
 	//application fires a protocol to this function to link together
@@ -29,6 +27,11 @@ public class NetworkManager : MonoBehaviour
 			case "Lobby":
 				//PhotonNetwork.playerList[0].name;
 			break;
+
+			case "PrototypeLevel":
+				Cursor.lockState =  CursorLockMode.Confined;
+				Cursor.visible = false;
+			break;
 		}
 
     }
@@ -36,12 +39,18 @@ public class NetworkManager : MonoBehaviour
     //Linked to the button
     public void enterRoom()
     {
-		string roomName = GameObject.Find("InputField").GetComponent<InputField>().text;
-		PhotonNetwork.playerName = GameObject.Find("InputField").GetComponent<InputField>().text;
+		string roomName = GameObject.Find("Room").GetComponent<InputField>().text;
+		PhotonNetwork.playerName = GameObject.Find("Username").GetComponent<InputField>().text;
 		RoomOptions roomOptions = new RoomOptions();
 		roomOptions.MaxPlayers = 6;
 		PhotonNetwork.JoinOrCreateRoom(roomName, roomOptions, TypedLobby.Default);
     }
+
+    //Change scene once connected to room
+	void OnJoinedRoom ()
+	{
+		SceneManager.LoadScene("Lobby");
+	}
 
     //For debugging purposes only
 	void Update()
