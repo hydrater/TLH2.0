@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class NetworkManager : Photon.MonoBehaviour
 {
 	const string VERSION = "Prototype";
+	bool isReady;
 
 	//Connect to server upon game start
 	void Awake() 
@@ -27,7 +28,9 @@ public class NetworkManager : Photon.MonoBehaviour
 			break;
 
 			case "Lobby":
-			photonView.RPC("updatePlayerDisplay", PhotonTargets.All);
+				photonView.RPC("updatePlayerDisplay", PhotonTargets.All);
+				GameObject.Find("ReadyBtn").GetComponent<Button>().onClick.AddListener(readyButton);
+				Debug.Log(GameObject.Find("ReadyButton"));
 			break;
 
 			case "PrototypeLevel":
@@ -46,6 +49,7 @@ public class NetworkManager : Photon.MonoBehaviour
 		RoomOptions roomOptions = new RoomOptions();
 		roomOptions.MaxPlayers = 6;
 		PhotonNetwork.JoinOrCreateRoom(roomName, roomOptions, TypedLobby.Default);
+		isReady = false;
     }
 
     //Change scene once connected to room
@@ -64,25 +68,70 @@ public class NetworkManager : Photon.MonoBehaviour
 		updatePlayerDisplay();
 	}
 
-    //For debugging purposes only
+	public void readyButton()
+	{
+		isReady = !isReady;
+		photonView.RPC("lobbyReady", PhotonTargets.All, isReady, PhotonNetwork.playerName);
+	}
+    //For debugging purposes and convenient keyboard controls
 	void Update()
 	{
-		//Debug.Log(SceneManager.GetActiveScene().name);
+		//Debug.Log();
+
+
 	}
 
 	[PunRPC]
 	void updatePlayerDisplay()
 	{
 		Transform playerList = GameObject.Find("Player List").transform;
-		for(byte i = 0; i<PhotonNetwork.playerList.Length; ++i)
+		for(byte i = 0; i < 6; ++i)
 		{
-			playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text = PhotonNetwork.playerList[i].name;
+			if (i<PhotonNetwork.playerList.Length)
+			{
+				playerList.transform.GetChild(i).gameObject.SetActive(true);
+				playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text = PhotonNetwork.playerList[i].name;
+			}
+			else
+			{
+				playerList.transform.GetChild(i).gameObject.SetActive(false);
+				break;
+			}
 		}
+
 	}
 
 	[PunRPC]
-	void lobbyReady()
+	void lobbyReady(bool ready, string username)
 	{
-		
+		byte readyAmt = 0;
+		Transform playerList = GameObject.Find("Player List").transform;
+		for(byte i = 0; i < PhotonNetwork.playerList.Length; ++i)
+		{
+			if(playerList.transform.GetChild(i).GetChild(0).GetComponent<Text>().text == username)
+			{
+				playerList.transform.GetChild(i).GetComponent<Image>().color = ready ? Color.green : Color.red;
+				++readyAmt;
+			}
+		}
+		if (readyAmt == PhotonNetwork.playerList.Length)
+		{
+			StartCoroutine(gameStartTimer());
+		}
+		else
+		{
+			StopCoroutine(gameStartTimer());
+		}
+	}
+
+	IEnumerator gameStartTimer()
+	{
+		for (sbyte i = 5; i >= 0; --i)
+		{
+			yield return new WaitForSeconds(1f);
+			//update timer UI
+		}
+		//display loading scene
+		SceneManager.LoadSceneAsync("PrototypeLevel");
 	}
 }
