@@ -540,7 +540,7 @@ GameObject:
   - 222: {fileID: 1382451548}
   - 114: {fileID: 1382451547}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Error Log
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,7 +593,7 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text

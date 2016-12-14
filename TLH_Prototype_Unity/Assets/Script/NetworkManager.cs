@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class NetworkManager : Photon.MonoBehaviour
 {
@@ -44,12 +45,21 @@ public class NetworkManager : Photon.MonoBehaviour
     //Linked to the button
     public void enterRoom()
     {
-		string roomName = GameObject.Find("Room").GetComponent<InputField>().text;
 		PhotonNetwork.playerName = GameObject.Find("Username").GetComponent<InputField>().text;
+		if(PhotonNetwork.playerName.Length < 3)
+		{
+			GameObject.Find("Error Log").GetComponent<Text>().text = "Your name is too short!";
+			return;
+		}
+		string roomName = GameObject.Find("Room").GetComponent<InputField>().text;
+		if (roomName == "")
+		{
+			GameObject.Find("Error Log").GetComponent<Text>().text = "You need to enter a room name!";
+			return;
+		}
 		RoomOptions roomOptions = new RoomOptions();
 		roomOptions.MaxPlayers = 6;
 		PhotonNetwork.JoinOrCreateRoom(roomName, roomOptions, TypedLobby.Default);
-		isReady = false;
     }
 
     //Change scene once connected to room
@@ -91,7 +101,6 @@ public class NetworkManager : Photon.MonoBehaviour
 		{
 			enterRoom();
 		}
-		//Debug.Log();
 	}
 
 	[PunRPC]
@@ -123,6 +132,8 @@ public class NetworkManager : Photon.MonoBehaviour
 	{
 		PhotonNetwork.LeaveRoom();
 		SceneManager.LoadScene("_Title");
+		SceneManager.activeSceneChanged -= onSceneChange;
+		Destroy(gameObject);
 	}
 
 	private IEnumerator gameStart;
