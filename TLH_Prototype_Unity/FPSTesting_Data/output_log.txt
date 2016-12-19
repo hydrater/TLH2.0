@@ -1,0 +1,300 @@
+Initialize engine version: 5.4.2f2 (b7e030c65c9b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 21.21.13.7570]
+    Renderer: NVIDIA GeForce GTX 960M
+    Vendor:   NVIDIA
+    VRAM:     2016 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0 ATOC=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.168 seconds
+Platform assembly: C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Ke Chong\Desktop\TLH\TLH2.0\TLH_Prototype_Unity\FPSTesting_Data\Managed\System.dll (this message is harmless)
+desktop: 1680x1050 60Hz; virtual: 1680x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load N_AssaultRifle01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load DI_ShotgunShell01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load ArmDiffuse from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load ArmNormal from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MeasureBlack from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load DamageArrow from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Handgun02Normal from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load DI_Grenade01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MaceNormal from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Debris from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load NM_Hero from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load HandgunNormal from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MeasureGrey from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Pistol64x64 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load FullScreenSplatter from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load DI_MuzzleFlash04 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load D_AssaultRifle01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load Crosshair from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Bullet64x64 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Grenade64x64 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MechNormal from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load NM_Grenade01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Black from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load NM_Shotgun01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load HandgunDiffuse from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Explosion01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load DI_Pistol01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Shotgun64x64 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load ShotgunShell64x64 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load ShellNormal from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load N_Knife01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load DI_Arms01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load FullScreenFlash from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load NM_Pistol01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MachinegunBullet64x64 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Handgun02Diffuse from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MechDiffuse from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MuzzleFlash01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MaceDiffuse from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load NM_ShotgunShell01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load DI_Hero from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load HealthIcon from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load ShellDiffuse from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Measure from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load D_Knife01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load NM_Arms01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load Machinegun64x64 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+Could not open file C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS for read
+ 
+(Filename:  Line: 54)
+
+async texture load: failed to load DI_Shotgun01 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load ⁭Knife64x64 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+async texture load: failed to load MechDiffuse02 from C:/Users/Ke Chong/Desktop/TLH/TLH2.0/TLH_Prototype_Unity/FPSTesting_Data/sharedassets0.assets.resS
+UnloadTime: 0.760098 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1a08 -> priority: 1 
+  Thread -> id: 1d98 -> priority: 1 
+Warning: The 'Default' state cannot be disabled.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Warning: The 'Default' state cannot be disabled.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Warning (PlayerTest(Clone) (vp_FootstepManager)) This component is obsolete! please use the new vp_PlayerFootFXHandler component along with a scene vp_SurfaceManager instead.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Warning (4Mace (vp_FPWeaponMeleeAttack)) This component requires a vp_WeaponShooter (adding vp_WeaponShooter automatically).
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Warning (4Mace (vp_FPWeaponMeleeAttack)) WeaponShooter for this melee weapon has no 'ProjectilePrefab' (it won't be able to do damage).
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
