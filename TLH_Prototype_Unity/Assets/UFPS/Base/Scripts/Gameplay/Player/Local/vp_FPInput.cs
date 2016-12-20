@@ -296,11 +296,11 @@ public class vp_FPInput : vp_Component
 
 		// --- cycle to the next or previous weapon ---
 
-		if (vp_Input.GetButtonDown("SetPrevWeapon"))
+		/*if (vp_Input.GetButtonDown("SetPrevWeapon"))
 			FPPlayer.SetPrevWeapon.Try();
 
 		if (vp_Input.GetButtonDown("SetNextWeapon"))
-			FPPlayer.SetNextWeapon.Try();
+			FPPlayer.SetNextWeapon.Try();*/
 
 		// --- switch to weapon 1-10 by direct button press ---
 
