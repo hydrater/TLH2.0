@@ -38,7 +38,7 @@ public class NetworkManager : Photon.MonoBehaviour
 				Cursor.lockState =  CursorLockMode.Locked;
 				Cursor.visible = false;
 				Transform spawnPoint = GameObject.Find("spawnPoint").transform;
-				PhotonNetwork.Instantiate("HeroHDWeapons", spawnPoint.position, spawnPoint.rotation, 0);
+				PhotonNetwork.Instantiate("PlayerTest", spawnPoint.position, spawnPoint.rotation, 0);
 				//gameObject.SetActive(false);
 			break;
 		}

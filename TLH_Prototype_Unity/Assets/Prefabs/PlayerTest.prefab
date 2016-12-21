@@ -1573,6 +1573,8 @@ MonoBehaviour:
   - {fileID: 114000013287691152}
   - {fileID: 114000010016867636}
   - {fileID: 20000011736739130}
+  objectsToDisable:
+  - {fileID: 1000010599528276}
 --- !u!114 &114000012365756514
 MonoBehaviour:
   m_ObjectHideFlags: 1
