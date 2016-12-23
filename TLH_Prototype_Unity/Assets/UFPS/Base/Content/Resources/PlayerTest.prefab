@@ -1776,6 +1776,20 @@ MonoBehaviour:
   AmmoColor: {r: 1, g: 1, b: 1, a: 1}
   AmmoLowColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &114000013181302100
+<<<<<<< HEAD
+=======
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011528620088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee52ccbb221de344832aaa34d807d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114000013414944516
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
