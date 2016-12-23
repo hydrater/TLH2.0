@@ -34,12 +34,20 @@ public class NetworkManager : Photon.MonoBehaviour
 				GameObject.Find("LeaveBtn").GetComponent<Button>().onClick.AddListener(leaveButton);
 			break;
 
+<<<<<<< HEAD
 		case "PrototypeLevel":
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
 			Transform spawnPoint = GameObject.Find ("spawnPoint").transform;
 			PhotonNetwork.Instantiate ("PlayerTest", spawnPoint.position, spawnPoint.rotation, 0);
 			photonView.RPC ("updatePlayerName", PhotonTargets.All);
+=======
+			case "PrototypeLevel":
+				Cursor.lockState =  CursorLockMode.Locked;
+				Cursor.visible = false;
+				Transform spawnPoint = GameObject.Find("spawnPoint").transform;
+				PhotonNetwork.Instantiate("HeroHDWeapons", spawnPoint.position, spawnPoint.rotation, 0);
+>>>>>>> parent of dc83667... Change back to Photon
 				//gameObject.SetActive(false);
 			break;
 		}
