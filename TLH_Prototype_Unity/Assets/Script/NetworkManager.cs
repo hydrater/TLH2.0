@@ -34,11 +34,12 @@ public class NetworkManager : Photon.MonoBehaviour
 				GameObject.Find("LeaveBtn").GetComponent<Button>().onClick.AddListener(leaveButton);
 			break;
 
-			case "PrototypeLevel":
-				Cursor.lockState =  CursorLockMode.Locked;
-				Cursor.visible = false;
-				Transform spawnPoint = GameObject.Find("spawnPoint").transform;
-				PhotonNetwork.Instantiate("PlayerTest", spawnPoint.position, spawnPoint.rotation, 0);
+		case "PrototypeLevel":
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+			Transform spawnPoint = GameObject.Find ("spawnPoint").transform;
+			PhotonNetwork.Instantiate ("PlayerTest", spawnPoint.position, spawnPoint.rotation, 0);
+			photonView.RPC ("updatePlayerName", PhotonTargets.All);
 				//gameObject.SetActive(false);
 			break;
 		}
@@ -170,5 +171,15 @@ public class NetworkManager : Photon.MonoBehaviour
 		}
 		//display loading scene
 		SceneManager.LoadSceneAsync("PrototypeLevel");
+	}
+
+	[PunRPC]
+	void updatePlayerName()
+	{
+		Transform playerNames = GameObject.Find("PlayerName").transform;
+		for(int i = PhotonNetwork.playerList.Length - 1; i >= 0; --i)
+		{
+			playerNames.transform.GetComponent<TextMesh>().text = PhotonNetwork.playerList[i].name;
+		}
 	}
 }

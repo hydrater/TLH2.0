@@ -35,4 +35,5 @@ MonoBehaviour:
   - updatePlayerDisplay
   - lobbyReady
   - readyButton
+  - updatePlayerName
   DisableAutoOpenWizard: 1

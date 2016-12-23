@@ -47,12 +47,10 @@ GameObject:
   - 114: {fileID: 114000013133491218}
   - 114: {fileID: 114000010326469644}
   - 114: {fileID: 114000011417583018}
-  - 114: {fileID: 114000013414944516}
-  - 114: {fileID: 114000012778024998}
-  - 114: {fileID: 114000010530882000}
   - 114: {fileID: 114000011489980778}
   - 114: {fileID: 114000013641260810}
   - 114: {fileID: 114000014140860120}
+  - 114: {fileID: 114000013181302100}
   m_Layer: 0
   m_Name: PlayerTest
   m_TagString: Untagged
@@ -92,6 +90,24 @@ GameObject:
   m_Layer: 0
   m_Name: FPSCamera
   m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012785513292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013729219956}
+  - 23: {fileID: 23000010391386794}
+  - 102: {fileID: 102000011628814688}
+  - 114: {fileID: 114000013032364440}
+  m_Layer: 0
+  m_Name: PlayerName
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,6 +265,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000010681673356}
   m_RootOrder: 4
+--- !u!4 &4000013729219956
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012785513292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.01, y: 1.64, z: 0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000013937423410}
+  m_RootOrder: 2
 --- !u!4 &4000013814598128
 Transform:
   m_ObjectHideFlags: 1
@@ -275,6 +304,7 @@ Transform:
   m_Children:
   - {fileID: 4000010681673356}
   - {fileID: 4000012964775846}
+  - {fileID: 4000013729219956}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!20 &20000011559815128
@@ -345,6 +375,35 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!23 &23000010391386794
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012785513292}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &23000011951663514
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -758,6 +817,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!102 &102000011628814688
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012785513292}
+  m_Text: Player
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 4
+  m_Alignment: 1
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
 --- !u!114 &114000010078407428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -899,39 +979,6 @@ MonoBehaviour:
   MotionPositionRecoilCameraFactor: 0
   AnimationFire: {fileID: 0}
   AnimationOutOfAmmo: {fileID: 0}
---- !u!114 &114000010530882000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011528620088}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88c00175016e86e409471a129e7965a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentsToDisable:
-  - {fileID: 114000011045754750}
-  - {fileID: 114000012142020358}
-  - {fileID: 114000013852417432}
-  - {fileID: 114000011115663836}
-  - {fileID: 114000012171589428}
-  - {fileID: 114000013133491218}
-  - {fileID: 114000010326469644}
-  - {fileID: 114000011417583018}
-  - {fileID: 114000011489980778}
-  - {fileID: 20000013862844100}
-  - {fileID: 81000010377283828}
-  - {fileID: 114000010078407428}
-  - {fileID: 114000013965180082}
-  - {fileID: 114000011958784392}
-  - {fileID: 114000012978118890}
-  - {fileID: 114000014078362626}
-  - {fileID: 114000011493770232}
-  - {fileID: 114000010787755038}
-  - {fileID: 114000012254635556}
-  - {fileID: 114000010450711642}
-  - {fileID: 20000011559815128}
 --- !u!114 &114000010787755038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -975,7 +1022,7 @@ MonoBehaviour:
   ProjectileScale: 1
   ProjectileFiringRate: 0.1
   ProjectileSpawnDelay: 0
-  ProjectileCount: 0
+  ProjectileCount: 1
   ProjectileSpread: 0
   ProjectileSourceIsRoot: 1
   FireMessage: 
@@ -1566,38 +1613,6 @@ MonoBehaviour:
   AmbientInterval: {x: 2.5, y: 7.5}
   PositionExitOffset: {x: 0, y: -1, z: 0}
   RotationExitOffset: {x: 40, y: 0, z: 0}
---- !u!114 &114000012778024998
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011528620088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 109
-    i1: 21
-    i2: 44
-    i3: 191
-    i4: 244
-    i5: 0
-    i6: 244
-    i7: 244
-    i8: 122
-    i9: 143
-    i10: 64
-    i11: 58
-    i12: 127
-    i13: 204
-    i14: 241
-    i15: 93
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!114 &114000012978118890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1722,6 +1737,17 @@ MonoBehaviour:
   AmbientInterval: {x: 2.5, y: 7.5}
   PositionExitOffset: {x: 0, y: -1, z: 0}
   RotationExitOffset: {x: 40, y: 0, z: 0}
+--- !u!114 &114000013032364440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012785513292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bcd574f9225b1244ba26c785b9b58d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000013133491218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1749,26 +1775,17 @@ MonoBehaviour:
   HealthLowSoundInterval: 25
   AmmoColor: {r: 1, g: 1, b: 1, a: 1}
   AmmoLowColor: {r: 0, g: 0, b: 0, a: 1}
---- !u!114 &114000013414944516
+--- !u!114 &114000013181302100
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011528620088}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ee52ccbb221de344832aaa34d807d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &114000013641260810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1790,10 +1807,9 @@ MonoBehaviour:
   - {fileID: 114000010326469644}
   - {fileID: 114000011417583018}
   - {fileID: 114000011489980778}
-  - {fileID: 20000013862844100}
-  - {fileID: 81000010377283828}
   objectsToDisable:
   - {fileID: 1000012593301606}
+  playerName: {fileID: 1000012785513292}
 --- !u!114 &114000013852417432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2026,12 +2042,12 @@ MonoBehaviour:
   OwnerShipWasTransfered: 0
   prefixBackup: -1
   observed: {fileID: 0}
-  synchronization: 0
+  synchronization: 3
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 114000013181302100}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1

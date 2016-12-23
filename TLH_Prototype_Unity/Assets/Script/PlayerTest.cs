@@ -10,6 +10,9 @@ public class PlayerTest : Photon.MonoBehaviour {
 	[SerializeField]
 	GameObject[] objectsToDisable;
 
+	[SerializeField]
+	GameObject playerName;
+
 	//Camera sceneCamera;
 
 	// Use this for initialization
@@ -22,7 +25,11 @@ public class PlayerTest : Photon.MonoBehaviour {
 			for (int i = 0; i < objectsToDisable.Length; i++) {
 				objectsToDisable[i].gameObject.SetActive(false);
 			}
-		} /*else {
+		}
+		if (photonView.isMine) {
+			playerName.gameObject.SetActive (false);
+		}
+		/*else {
 			sceneCamera = Camera.main;
 			if (sceneCamera != null) {
 				sceneCamera.gameObject.SetActive(false);
